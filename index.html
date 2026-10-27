@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rakesh Raizada | Independent for Western Metro</title>
+<meta name="description" content="Rakesh Raizada — Independent Candidate for the Victorian Legislative Council (Upper House), Western Metropolitan Region. Victorian State Election 2026. Service before self.">
+<meta property="og:title" content="Rakesh Raizada — Independent Candidate, Western Metropolitan Region">
+<meta property="og:description" content="Service before self. Community before division. Opportunity for all.">
+<meta property="og:image" content="img/p20.jpg">
+<meta name="theme-color" content="#0A2533">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Kaushan+Script&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0A2533;      /* deep teal-navy, base of the campaign banner */
+  --teal:#0F3D52;
+  --orange:#F26A1B;    /* signature colour: Raizada orange */
+  --amber:#FFA62B;
+  --cyan:#22C7E3;
+  --cream:#FFF7EE;
+  --ink:#10222C;
+  --muted:#5B6B74;
+  --white:#fff;
+  --r:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Montserrat,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+.script{font-family:"Kaushan Script",cursive;color:var(--amber);font-weight:400}
+.eyebrow{font-size:.8rem;letter-spacing:.32em;text-transform:uppercase;font-weight:700;color:var(--orange)}
+h2{font-size:clamp(2rem,4.5vw,3.3rem);line-height:1.05;font-weight:900;text-transform:uppercase;letter-spacing:-.01em;margin:.4rem 0 1.2rem}
+h2 em{font-style:normal;color:var(--orange)}
+section{padding:clamp(64px,9vw,120px) 0;position:relative}
+.lead{font-size:1.15rem;color:var(--muted);max-width:62ch}
+
+/* ---------- NAV ---------- */
+nav{position:fixed;inset:0 0 auto;z-index:50;transition:.35s;padding:14px 0}
+nav.solid{background:rgba(10,37,51,.96);backdrop-filter:blur(10px);box-shadow:0 6px 30px rgba(0,0,0,.25);padding:8px 0}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font-weight:900;letter-spacing:.04em;color:#fff;text-decoration:none;font-size:1.15rem;line-height:1}
+.logo span{color:var(--orange)}
+.logo small{display:block;font-size:.58rem;letter-spacing:.3em;font-weight:600;color:var(--cyan);margin-top:4px}
+.links{display:flex;gap:26px;list-style:none}
+.links a{color:#fff;text-decoration:none;font-weight:600;font-size:.88rem;opacity:.85}
+.links a:hover{opacity:1;color:var(--amber)}
+.vote-pill{background:var(--orange);color:#fff;font-weight:900;text-decoration:none;padding:10px 18px;border-radius:999px;font-size:.85rem;letter-spacing:.06em;box-shadow:0 6px 20px rgba(242,106,27,.45)}
+.burger{display:none;background:none;border:0;color:#fff;font-size:1.7rem;cursor:pointer}
+@media (max-width:900px){
+  .links{position:fixed;inset:62px 0 auto;flex-direction:column;background:var(--navy);padding:20px 24px;gap:16px;transform:translateY(-140%);transition:.35s}
+  .links.open{transform:none}
+  .burger{display:block}
+  .vote-pill{display:none}
+}
+
+/* ---------- HERO SLIDER ---------- */
+.hero{height:100svh;min-height:640px;position:relative;overflow:hidden;background:var(--navy);color:#fff;padding:0}
+.hero .slide{position:absolute;inset:0;opacity:0;transition:opacity 1.4s ease}
+.hero .slide.on{opacity:1}
+.hero .slide img{width:100%;height:100%;object-fit:cover;object-position:70% 25%;transform:scale(1.12);transition:transform 7s ease-out}
+.hero .slide.on img{transform:scale(1)}
+.hero::before{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,var(--navy) 0%,var(--navy) 36%,rgba(10,37,51,.7) 48%,rgba(10,37,51,.05) 66%,rgba(242,106,27,.18) 100%)}
+@media (min-width:701px){.hero .slide{left:34%}.hero .slide img{object-position:50% 20%}}
+.hero::after{ /* orange swoosh echoing the banner */
+  content:"";position:absolute;z-index:3;width:120vmax;height:120vmax;border-radius:50%;
+  border:28px solid var(--orange);border-color:var(--orange) transparent transparent transparent;
+  right:-70vmax;top:-30vmax;transform:rotate(32deg);opacity:.9;pointer-events:none}
+.hero-inner{position:relative;z-index:4;height:100%;display:flex;flex-direction:column;justify-content:center;padding-top:60px}
+.hero .tag{letter-spacing:.35em;font-weight:600;font-size:clamp(.7rem,1.4vw,.95rem);display:flex;align-items:center;gap:14px}
+.hero .tag::before{content:"";width:46px;height:5px;background:var(--orange);border-radius:3px}
+.name{font-weight:900;line-height:.86;font-size:clamp(3.4rem,11vw,9rem);letter-spacing:-.02em;margin:.25em 0 .15em}
+.name b{display:block;color:var(--orange);font-weight:900}
+.cand{display:inline-block;font-weight:800;font-size:clamp(1.1rem,2.6vw,1.9rem);letter-spacing:.06em;border-top:5px solid var(--cyan);padding-top:10px}
+.region{font-size:clamp(.95rem,1.9vw,1.3rem);font-weight:500;opacity:.92}
+.hero .script{font-size:clamp(2.2rem,5.5vw,4rem);margin-top:18px;line-height:1;position:relative;width:fit-content}
+.hero .script::after{content:"";position:absolute;left:4%;right:-6%;bottom:-12px;height:6px;border-radius:6px;background:linear-gradient(90deg,transparent,var(--cyan) 20%,var(--cyan) 80%,transparent);transform:rotate(-2deg)}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:40px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:999px;font-weight:800;text-decoration:none;letter-spacing:.04em;transition:.25s;border:2px solid transparent}
+.btn-o{background:var(--orange);color:#fff;box-shadow:0 10px 30px rgba(242,106,27,.45)}
+.btn-o:hover{background:var(--amber);transform:translateY(-2px)}
+.btn-g{border-color:rgba(255,255,255,.6);color:#fff}
+.btn-g:hover{background:#fff;color:var(--navy)}
+.vote1{position:absolute;z-index:5;right:clamp(16px,5vw,80px);top:clamp(90px,16vh,150px);background:#fff;color:var(--orange);border:6px solid var(--orange);transform:rotate(-8deg);text-align:center;padding:6px 18px 4px;box-shadow:0 18px 40px rgba(0,0,0,.35);animation:bob 4s ease-in-out infinite}
+.vote1 .v{font-weight:900;font-size:clamp(1.2rem,2.6vw,2.1rem);letter-spacing:.04em;background:var(--orange);color:#fff;margin:0 -18px;padding:0 10px;line-height:1.3}
+.vote1 .n{font-weight:900;font-size:clamp(3.5rem,8vw,6.5rem);line-height:1}
+@keyframes bob{50%{transform:rotate(-5deg) translateY(-8px)}}
+.dots{position:absolute;z-index:5;bottom:28px;left:50%;transform:translateX(-50%);display:flex;gap:10px}
+.dots button{width:12px;height:12px;border-radius:999px;border:0;background:rgba(255,255,255,.45);cursor:pointer;transition:.3s}
+.dots button.on{width:36px;background:var(--orange)}
+@media (max-width:700px){
+  .vote1{top:auto;bottom:80px;right:16px}
+  .hero::before{background:linear-gradient(180deg,rgba(10,37,51,.6),rgba(10,37,51,.92) 55%)}
+}
+
+/* ---------- COUNTDOWN / PILLARS ---------- */
+.band{background:var(--orange);color:#fff;padding:0;overflow:hidden}
+.ticker{display:flex;white-space:nowrap;animation:tick 30s linear infinite;padding:16px 0;font-weight:900;font-size:clamp(1rem,2.2vw,1.5rem);text-transform:uppercase;letter-spacing:.06em}
+.ticker span{padding:0 28px;display:inline-flex;align-items:center;gap:28px}
+.ticker span::after{content:"✦";color:var(--navy)}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+.pillars{background:var(--navy);color:#fff;padding:56px 0}
+.pillars .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.pillar{text-align:center;padding:10px 18px;border-right:1px solid rgba(255,255,255,.18)}
+.pillar:last-child{border:0}
+.pillar svg{width:54px;height:54px;margin:0 auto 12px}
+.pillar h3{font-size:1.02rem;font-weight:800;line-height:1.25}
+.countdown{display:flex;justify-content:center;gap:clamp(10px,3vw,28px);margin-top:48px;flex-wrap:wrap;align-items:center}
+.countdown .lbl{font-weight:700;letter-spacing:.2em;text-transform:uppercase;font-size:.8rem;color:var(--cyan);width:100%;text-align:center}
+.cd{background:var(--teal);border-bottom:4px solid var(--orange);border-radius:12px;padding:12px 18px;min-width:88px;text-align:center}
+.cd b{display:block;font-size:2.2rem;font-weight:900;line-height:1}
+.cd small{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;opacity:.75}
+@media (max-width:700px){.pillars .grid{grid-template-columns:1fr 1fr;gap:28px 0}.pillar:nth-child(2){border:0}}
+
+/* ---------- ABOUT ---------- */
+.split{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(32px,6vw,80px);align-items:center}
+.split.rev{grid-template-columns:1.1fr 1fr}
+.photo-frame{position:relative}
+.photo-frame img{border-radius:var(--r);box-shadow:0 30px 60px rgba(10,37,51,.25);aspect-ratio:4/5;object-fit:cover;width:100%}
+.photo-frame::before{content:"";position:absolute;inset:-18px 18px 18px -18px;border:6px solid var(--orange);border-radius:var(--r);z-index:-1}
+.photo-frame .badge{position:absolute;right:-14px;bottom:28px;background:var(--navy);color:#fff;padding:16px 22px;border-radius:14px;border-left:6px solid var(--orange);font-weight:800;line-height:1.2;box-shadow:0 16px 40px rgba(0,0,0,.3)}
+.photo-frame .badge b{display:block;font-size:2rem;color:var(--amber)}
+.mantras{display:grid;gap:12px;margin-top:26px}
+.mantra{background:#fff;border-radius:14px;padding:14px 18px;border-left:5px solid var(--cyan);box-shadow:0 6px 20px rgba(10,37,51,.06)}
+.mantra b{color:var(--teal);font-weight:800}
+.mantra span{color:var(--muted);font-size:.95rem}
+@media (max-width:860px){.split,.split.rev{grid-template-columns:1fr}.split.rev .photo-frame{order:-1}}
+
+/* ---------- DARK SECTION ---------- */
+.dark{background:radial-gradient(1200px 600px at 85% 0%,rgba(242,106,27,.22),transparent 60%),var(--navy);color:#fff}
+.dark .lead{color:rgba(255,255,255,.78)}
+.roles{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:40px}
+.role{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--r);padding:24px;transition:.3s}
+.role:hover{transform:translateY(-6px);border-color:var(--orange);background:rgba(242,106,27,.1)}
+.role .ic{width:46px;height:46px;border-radius:12px;background:var(--orange);display:grid;place-items:center;margin-bottom:14px}
+.role .ic svg{width:24px;height:24px}
+.role h3{font-size:1.08rem;font-weight:800;margin-bottom:6px}
+.role p{font-size:.93rem;opacity:.78}
+.quote-band{margin-top:56px;text-align:center}
+.quote-band p{font-size:clamp(1.4rem,3.2vw,2.3rem);font-weight:800;line-height:1.25;max-width:26ch;margin:auto}
+.quote-band p em{font-style:normal;color:var(--amber)}
+
+/* ---------- GALLERY SLIDER ---------- */
+.gslider{position:relative;margin-top:48px;border-radius:var(--r);overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.35)}
+.gtrack{display:flex;transition:transform .8s cubic-bezier(.7,0,.2,1)}
+.gtrack figure{min-width:100%;position:relative;aspect-ratio:16/8}
+.gtrack img{width:100%;height:100%;object-fit:cover}
+.gtrack figcaption{position:absolute;left:0;right:0;bottom:0;padding:50px 28px 22px;background:linear-gradient(transparent,rgba(10,37,51,.9));color:#fff;font-weight:700}
+.garrow{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:50%;border:0;background:rgba(255,255,255,.92);color:var(--navy);font-size:1.4rem;font-weight:900;cursor:pointer;z-index:3;box-shadow:0 8px 20px rgba(0,0,0,.25);transition:.25s}
+.garrow:hover{background:var(--orange);color:#fff}
+.garrow.p{left:16px}.garrow.n{right:16px}
+.gdots{position:absolute;bottom:16px;right:24px;display:flex;gap:8px;z-index:3}
+.gdots button{width:10px;height:10px;border-radius:9px;border:0;background:rgba(255,255,255,.5);cursor:pointer;transition:.3s}
+.gdots button.on{background:var(--orange);width:28px}
+@media (max-width:700px){.gtrack figure{aspect-ratio:4/3}.garrow{width:40px;height:40px}}
+
+/* ---------- TIMELINE ---------- */
+.timeline{margin-top:34px;position:relative;padding-left:34px}
+.timeline::before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:4px;border-radius:4px;background:linear-gradient(var(--orange),var(--amber),var(--cyan))}
+.tl{position:relative;margin-bottom:28px}
+.tl::before{content:"";position:absolute;left:-34px;top:4px;width:22px;height:22px;border-radius:50%;background:#fff;border:5px solid var(--orange)}
+.tl .where{font-size:.78rem;letter-spacing:.25em;text-transform:uppercase;font-weight:800;color:var(--orange)}
+.tl h3{font-size:1.2rem;font-weight:800;margin:2px 0 4px}
+.tl p{color:var(--muted)}
+
+/* ---------- AWARDS ---------- */
+.awards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:40px}
+.award{background:#fff;border-radius:var(--r);padding:26px 22px;box-shadow:0 10px 30px rgba(10,37,51,.07);border-top:6px solid var(--orange);transition:.3s}
+.award:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(10,37,51,.14)}
+.award .medal{font-size:2rem;line-height:1}
+.award h3{font-size:1.02rem;font-weight:800;margin:10px 0 4px}
+.award p{font-size:.88rem;color:var(--muted)}
+.quals{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px}
+.chip{background:var(--navy);color:#fff;border-radius:999px;padding:9px 18px;font-weight:700;font-size:.86rem}
+.chip.o{background:var(--orange)}
+
+/* ---------- WHY INDEPENDENT ---------- */
+.why{background:linear-gradient(135deg,var(--orange),#E2531A 60%,#C9420F);color:#fff;overflow:hidden}
+.why::before{content:"";position:absolute;width:700px;height:700px;border-radius:50%;border:40px solid rgba(255,255,255,.08);right:-250px;top:-250px}
+.why h2 em{color:var(--navy)}
+.vs{display:grid;gap:14px;margin-top:36px}
+.vs div{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:18px;background:rgba(10,37,51,.18);border-radius:16px;padding:18px 24px;font-weight:800;font-size:clamp(1rem,2.2vw,1.35rem)}
+.vs .yes{text-align:right}
+.vs .no{opacity:.6;text-decoration:line-through;text-decoration-thickness:3px}
+.vs .r{font-family:"Kaushan Script";font-size:1.2em;color:var(--navy);font-weight:400}
+
+/* ---------- PRIORITIES ---------- */
+.prio{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:40px}
+.p-card{position:relative;background:#fff;border-radius:var(--r);padding:28px 24px 24px;box-shadow:0 10px 30px rgba(10,37,51,.07);overflow:hidden;transition:.3s}
+.p-card::after{content:"";position:absolute;left:0;bottom:0;height:5px;width:0;background:linear-gradient(90deg,var(--orange),var(--cyan));transition:.4s}
+.p-card:hover::after{width:100%}
+.p-card .num{font-weight:900;font-size:2.6rem;line-height:1;color:var(--orange);opacity:.18;position:absolute;right:18px;top:12px}
+.p-card h3{font-weight:800;font-size:1.12rem;margin-bottom:8px;color:var(--teal)}
+.p-card p{font-size:.94rem;color:var(--muted)}
+
+/* ---------- HERITAGE ---------- */
+.heritage{background:var(--navy);color:#fff;overflow:hidden;padding-bottom:0}
+.marquee{display:flex;gap:16px;width:max-content;animation:tick 45s linear infinite;margin-top:46px;padding-bottom:clamp(64px,9vw,120px)}
+.marquee:hover{animation-play-state:paused}
+.marquee img{height:clamp(260px,34vw,420px);width:auto;border-radius:var(--r);object-fit:cover;aspect-ratio:2/3;border:4px solid rgba(255,255,255,.08)}
+.sk{font-family:"Kaushan Script";font-size:clamp(2rem,5vw,3.6rem);color:var(--amber);line-height:1.1}
+
+/* ---------- CLOSING ---------- */
+.closing{position:relative;color:#fff;text-align:center;overflow:hidden;padding:clamp(90px,12vw,160px) 0}
+.closing .bg{position:absolute;inset:0;background:url(img/p05.jpg) center 25%/cover}
+.closing::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(rgba(10,37,51,.88),rgba(10,37,51,.95))}
+.closing .wrap{position:relative;z-index:2}
+.motto{font-weight:900;text-transform:uppercase;font-size:clamp(1.8rem,5.5vw,4rem);line-height:1.08;letter-spacing:-.01em}
+.motto span{display:block}
+.motto span:nth-child(2){color:var(--orange)}
+.motto span:nth-child(3){color:var(--cyan)}
+.contact{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:40px}
+footer{background:#061821;color:rgba(255,255,255,.7);padding:30px 0;font-size:.85rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer b{color:#fff}
+
+/* ---------- REVEAL ---------- */
+.rv{opacity:0;transform:translateY(40px);transition:opacity .9s ease,transform .9s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="wrap">
+    <a href="#top" class="logo">RAKESH <span>RAIZADA</span><small>INDEPENDENT · WESTERN METRO</small></a>
+    <ul class="links" id="links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#service">Service</a></li>
+      <li><a href="#career">Experience</a></li>
+      <li><a href="#why">Why Independent</a></li>
+      <li><a href="#priorities">Priorities</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="vote-pill">VOTE 1 RAIZADA</a>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="slide on"><img src="img/p02.jpg" alt="Rakesh Raizada smiling"></div>
+  <div class="slide"><img src="img/p20.jpg" alt="Rakesh Raizada in traditional red attire"></div>
+  <div class="slide"><img src="img/p10.jpg" alt="Rakesh Raizada at his desk"></div>
+  <div class="slide"><img src="img/p25.jpg" alt="Rakesh Raizada meeting community members"></div>
+  <div class="slide"><img src="img/p05.jpg" alt="Portrait of Rakesh Raizada"></div>
+
+  <div class="vote1" aria-label="Vote 1"><div class="v">VOTE</div><div class="n">1</div></div>
+
+  <div class="wrap hero-inner">
+    <div class="tag">VICTORIAN STATE ELECTION 2026</div>
+    <h1 class="name">RAKESH<b>RAIZADA</b></h1>
+    <div><span class="cand">INDEPENDENT CANDIDATE</span></div>
+    <div class="region">Upper House&nbsp;|&nbsp;Western Metropolitan Region</div>
+    <div class="script">Service before self.</div>
+    <div class="hero-cta">
+      <a href="#about" class="btn btn-o">Meet Rakesh →</a>
+      <a href="#priorities" class="btn btn-g">My Priorities</a>
+    </div>
+  </div>
+  <div class="dots" id="heroDots"></div>
+</header>
+
+<div class="band" aria-hidden="true">
+  <div class="ticker">
+    <span>Service before self</span><span>Community before division</span><span>Opportunity for all</span><span>Vote 1 Rakesh Raizada</span>
+    <span>Service before self</span><span>Community before division</span><span>Opportunity for all</span><span>Vote 1 Rakesh Raizada</span>
+  </div>
+</div>
+
+<!-- PILLARS -->
+<section class="pillars">
+  <div class="wrap">
+    <div class="grid">
+      <div class="pillar rv">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#FFA62B" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="7" r="3"/><circle cx="5" cy="9" r="2.2"/><circle cx="19" cy="9" r="2.2"/><path d="M6 20v-2a6 6 0 0 1 12 0v2M1.5 19v-1a4 4 0 0 1 4-4M22.5 19v-1a4 4 0 0 0-4-4"/></svg>
+        <h3>Stronger<br>Communities</h3>
+      </div>
+      <div class="pillar rv">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#22C7E3" stroke-width="1.6" stroke-linecap="round"><path d="M5 19C5 10 11 4 20 4c0 9-6 15-15 15Z"/><path d="M5 19 13 11"/></svg>
+        <h3>A More Sustainable<br>Victoria</h3>
+      </div>
+      <div class="pillar rv">
+        <svg viewBox="0 0 24 24" fill="#FFA62B"><rect x="3" y="14" width="4" height="7" rx="1"/><rect x="10" y="9" width="4" height="12" rx="1"/><rect x="17" y="3" width="4" height="18" rx="1"/></svg>
+        <h3>A Fairer<br>Economy</h3>
+      </div>
+      <div class="pillar rv">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#22C7E3" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>
+        <h3>A More Accountable<br>Government</h3>
+      </div>
+    </div>
+    <div class="countdown rv" id="countdown">
+      <div class="lbl">Election Day · Saturday 28 November 2026</div>
+      <div class="cd"><b id="cdD">--</b><small>Days</small></div>
+      <div class="cd"><b id="cdH">--</b><small>Hours</small></div>
+      <div class="cd"><b id="cdM">--</b><small>Mins</small></div>
+      <div class="cd"><b id="cdS">--</b><small>Secs</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap split">
+    <div class="photo-frame rv">
+      <img src="img/p08.jpg" alt="Rakesh Raizada" loading="lazy">
+      <div class="badge"><b>Decades</b>of community &amp; professional leadership</div>
+    </div>
+    <div class="rv">
+      <div class="eyebrow">A New Chapter in a Journey of Service</div>
+      <h2>A Lifetime of <em>Leadership</em>, Service &amp; Community</h2>
+      <p class="lead">I am standing as an independent candidate for the Victorian Legislative Council, seeking to represent the people of the Western Metropolitan Region — motivated by a lifelong commitment to service, integrity, fairness, inclusion and practical leadership.</p>
+      <p style="margin-top:14px">My guiding philosophy is rooted in <b>Vasudhaiva Kutumbakam</b> — “the world is one family” — and in these timeless principles:</p>
+      <div class="mantras">
+        <div class="mantra"><b>Sarva Jan Hitaya</b> <span>— the wellbeing of all</span></div>
+        <div class="mantra"><b>Sarve Bhavantu Sukhinah</b> <span>— may all be happy</span></div>
+        <div class="mantra"><b>Sarve Santu Niramayah</b> <span>— may all be free from illness and suffering</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMUNITY SERVICE -->
+<section class="dark" id="service">
+  <div class="wrap">
+    <div class="eyebrow">A Life of Community Service</div>
+    <h2>Turning responsibility into <em>meaningful service</em></h2>
+    <p class="lead">For many years I have contributed to Victoria's multicultural, community and not-for-profit sectors.</p>
+
+    <div class="roles">
+      <div class="role rv">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
+        <h3>Wyndham Rotary Club</h3>
+        <p>Director, International Service (2024–2027)</p>
+      </div>
+      <div class="role rv">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 21s-7.5-4.6-9.5-9.3C1 8 3.6 4 7.3 4c2 0 3.6 1.1 4.7 2.7C13.1 5.1 14.7 4 16.7 4 20.4 4 23 8 21.5 11.7 19.5 16.4 12 21 12 21Z"/></svg></div>
+        <h3>Ramon Helps Inc.</h3>
+        <p>President — supporting people facing disadvantage: family-violence prevention, employment, blood &amp; organ donation and community support.</p>
+      </div>
+      <div class="role rv">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg></div>
+        <h3>Vedic Global</h3>
+        <p>Founder Director, Secretary &amp; Public Officer</p>
+      </div>
+      <div class="role rv">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M4 19V6a2 2 0 0 1 2-2h12v15H6a2 2 0 0 0-2 2Z"/><path d="M8 8h6"/></svg></div>
+        <h3>Vedic Concept School</h3>
+        <p>Founder Member &amp; Adviser — Vedic knowledge, culture and universal wellbeing</p>
+      </div>
+      <div class="role rv">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20a6 6 0 0 1 12 0M14 20a4 4 0 0 1 7 0"/></svg></div>
+        <h3>And more</h3>
+        <p>Leadership and advisory roles with Women of Wyndham, JET Australia, JAF Australia and other community organisations.</p>
+      </div>
+    </div>
+
+    <div class="gslider rv" data-slider>
+      <div class="gtrack">
+        <figure><img src="img/p25.jpg" alt="" loading="lazy"><figcaption>Listening to the community</figcaption></figure>
+        <figure><img src="img/p24.jpg" alt="" loading="lazy"><figcaption>Working together across backgrounds</figcaption></figure>
+        <figure><img src="img/p26.jpg" alt="" loading="lazy"><figcaption>Practical conversations, practical solutions</figcaption></figure>
+        <figure><img src="img/p27.jpg" alt="" loading="lazy"><figcaption>Building a stronger Western Metro</figcaption></figure>
+        <figure><img src="img/p28.jpg" alt="" loading="lazy"><figcaption>Community before division</figcaption></figure>
+      </div>
+      <button class="garrow p" aria-label="Previous">‹</button><button class="garrow n" aria-label="Next">›</button>
+      <div class="gdots"></div>
+    </div>
+
+    <div class="quote-band rv"><p>“Leadership is not about holding a position — it is about <em>turning responsibility into meaningful service.</em>”</p></div>
+  </div>
+</section>
+
+<!-- CAREER -->
+<section id="career">
+  <div class="wrap split rev">
+    <div class="rv">
+      <div class="eyebrow">Professional Experience</div>
+      <h2>Banking, business &amp; <em>governance</em> across three continents</h2>
+      <p class="lead">Extensive Australian and international experience in banking, finance, business, governance and management.</p>
+      <div class="timeline">
+        <div class="tl rv"><div class="where">India</div><h3>Bank of Baroda</h3><p>Senior leadership positions.</p></div>
+        <div class="tl rv"><div class="where">Kenya</div><h3>Akiba Bank · GAPCO · SsangYong Motors · Trust Bank</h3><p>Executive roles across banking, energy and automotive.</p></div>
+        <div class="tl rv"><div class="where">Australia</div><h3>ANZ · NAB · Commonwealth Bank</h3><p>Senior management at ANZ and NAB, then Head of Indian Banking and Country Head, South Asian Banking at CBA.</p></div>
+      </div>
+      <p>This experience has given me a strong understanding of financial services, business, international markets, multicultural communities and the economic challenges facing individuals, families and businesses.</p>
+    </div>
+    <div class="photo-frame rv">
+      <img src="img/p12.jpg" alt="Rakesh Raizada at work" loading="lazy" style="aspect-ratio:4/3">
+      <div class="badge"><b>3</b>continents of leadership</div>
+    </div>
+  </div>
+</section>
+
+<!-- RECOGNITION -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow">Recognition &amp; Qualifications</div>
+    <h2>Recognised for <em>service</em></h2>
+    <div class="awards">
+      <div class="award rv"><div class="medal">🏅</div><h3>Paul Harris Fellow with Sapphire</h3><p>Rotary International</p></div>
+      <div class="award rv"><div class="medal">🌏</div><h3>Avenue of Service Award</h3><p>Rotary International — International Service</p></div>
+      <div class="award rv"><div class="medal">⭐</div><h3>Don Gregory Award</h3><p>Rotary</p></div>
+      <div class="award rv"><div class="medal">🤝</div><h3>Multicultural Excellence Award</h3><p>Victorian Multicultural Commission</p></div>
+      <div class="award rv"><div class="medal">🏆</div><h3>Person of the Year</h3><p>Indian Sun</p></div>
+      <div class="award rv"><div class="medal">💼</div><h3>Indian Executive of the Year</h3><p>Business recognition</p></div>
+    </div>
+    <div class="quals rv">
+      <span class="chip o">GAICD — Australian Institute of Company Directors</span>
+      <span class="chip">Fellow, AIBF / FINSIA</span>
+      <span class="chip">CAIIB</span>
+      <span class="chip">Finance</span><span class="chip">Law</span><span class="chip">History</span><span class="chip">Management</span><span class="chip">Financial Planning</span><span class="chip">Corporate Governance</span>
+    </div>
+  </div>
+</section>
+
+<!-- WHY INDEPENDENT -->
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--navy)">Why Independent?</div>
+    <h2>A different perspective <em>for public life</em></h2>
+    <p class="lead" style="color:rgba(255,255,255,.9)">After decades of professional and community service, I believe I can bring something different to the Upper House.</p>
+    <div class="vs">
+      <div class="rv"><span class="yes">Practical experience</span><span class="r">rather than</span><span class="no">political rhetoric</span></div>
+      <div class="rv"><span class="yes">Community service</span><span class="r">rather than</span><span class="no">self-interest</span></div>
+      <div class="rv"><span class="yes">Collaboration</span><span class="r">rather than</span><span class="no">division</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRIORITIES -->
+<section id="priorities">
+  <div class="wrap">
+    <div class="eyebrow">My Priorities</div>
+    <h2>A Victoria where everyone is <em>safe, respected &amp; included</em></h2>
+    <p class="lead">Victoria's strength lies in its diversity, and in people from different backgrounds working together.</p>
+    <div class="prio">
+      <div class="p-card rv"><span class="num">01</span><h3>Stronger Families &amp; Communities</h3><p>Supporting the local networks, volunteers and organisations that hold Western Metro together.</p></div>
+      <div class="p-card rv"><span class="num">02</span><h3>Ending Family &amp; Gender-Based Violence</h3><p>Prevention, early support and safety for every household.</p></div>
+      <div class="p-card rv"><span class="num">03</span><h3>Women &amp; Young People</h3><p>Opportunity, mentoring and a real voice in decisions that affect them.</p></div>
+      <div class="p-card rv"><span class="num">04</span><h3>Multicultural Inclusion &amp; Social Cohesion</h3><p>Every community respected, connected and able to participate fully.</p></div>
+      <div class="p-card rv"><span class="num">05</span><h3>Jobs &amp; Economic Opportunity</h3><p>Small business, community organisations and financial literacy for a fairer economy.</p></div>
+      <div class="p-card rv"><span class="num">06</span><h3>Transparent, Accountable Government</h3><p>Responsible governance, with integrity and openness at its core.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HERITAGE -->
+<section class="heritage">
+  <div class="wrap" style="text-align:center">
+    <div class="eyebrow">Vasudhaiva Kutumbakam</div>
+    <div class="sk">“The world is one family.”</div>
+  </div>
+  <div class="marquee" aria-hidden="true">
+    <img src="img/p18.jpg" alt="" loading="lazy"><img src="img/p01.jpg" alt="" loading="lazy"><img src="img/p19.jpg" alt="" loading="lazy"><img src="img/p09.jpg" alt="" loading="lazy"><img src="img/p21.jpg" alt="" loading="lazy"><img src="img/p03.jpg" alt="" loading="lazy"><img src="img/p22.jpg" alt="" loading="lazy"><img src="img/p15.jpg" alt="" loading="lazy">
+    <img src="img/p18.jpg" alt="" loading="lazy"><img src="img/p01.jpg" alt="" loading="lazy"><img src="img/p19.jpg" alt="" loading="lazy"><img src="img/p09.jpg" alt="" loading="lazy"><img src="img/p21.jpg" alt="" loading="lazy"><img src="img/p03.jpg" alt="" loading="lazy"><img src="img/p22.jpg" alt="" loading="lazy"><img src="img/p15.jpg" alt="" loading="lazy">
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="closing" id="contact">
+  <div class="bg"></div>
+  <div class="wrap">
+    <p class="lead rv" style="color:rgba(255,255,255,.85);margin:0 auto 34px;text-align:center">I am not seeking public life simply to hold political office. I am standing because I believe my professional experience, community service and commitment to inclusive leadership can be put to further service for the people of Victoria.</p>
+    <div class="motto rv"><span>Service before self.</span><span>Community before division.</span><span>Opportunity for all.</span></div>
+    <div class="contact rv">
+      <a class="btn btn-o" href="tel:+61434470095">📞 0434 470 095</a>
+      <a class="btn btn-g" href="https://www.facebook.com/profile.php?id=61595506671328" target="_blank" rel="noopener">Follow on Facebook</a>
+    </div>
+    <p class="rv" style="margin-top:30px;font-weight:800;letter-spacing:.2em;color:var(--amber)">VOTE 1 · RAKESH RAIZADA · UPPER HOUSE · WESTERN METRO</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span><b>Authorised by:</b> Rakesh Raizada, 3 Lush Ave, Werribee VIC 3030.</span>
+    <span>Independent Candidate · Victorian Legislative Council · Western Metropolitan Region</span>
+  </div>
+</footer>
+
+<script>
+// nav
+const nav=document.getElementById('nav'),links=document.getElementById('links');
+addEventListener('scroll',()=>nav.classList.toggle('solid',scrollY>40),{passive:true});
+document.getElementById('burger').onclick=()=>links.classList.toggle('open');
+links.querySelectorAll('a').forEach(a=>a.onclick=()=>links.classList.remove('open'));
+
+// hero crossfade slider
+(()=>{
+  const slides=[...document.querySelectorAll('.hero .slide')],dots=document.getElementById('heroDots');
+  let i=0,t;
+  slides.forEach((_,k)=>{const b=document.createElement('button');b.setAttribute('aria-label','Slide '+(k+1));b.onclick=()=>go(k);dots.append(b)});
+  function go(k){slides[i].classList.remove('on');dots.children[i].classList.remove('on');i=(k+slides.length)%slides.length;slides[i].classList.add('on');dots.children[i].classList.add('on');clearInterval(t);t=setInterval(()=>go(i+1),6000)}
+  go(0);
+})();
+
+// gallery sliders
+document.querySelectorAll('[data-slider]').forEach(s=>{
+  const tr=s.querySelector('.gtrack'),n=tr.children.length,d=s.querySelector('.gdots');let i=0,t;
+  for(let k=0;k<n;k++){const b=document.createElement('button');b.setAttribute('aria-label','Photo '+(k+1));b.onclick=()=>go(k);d.append(b)}
+  function go(k){i=(k+n)%n;tr.style.transform=`translateX(-${i*100}%)`;[...d.children].forEach((b,j)=>b.classList.toggle('on',j===i));clearInterval(t);t=setInterval(()=>go(i+1),5000)}
+  s.querySelector('.p').onclick=()=>go(i-1);s.querySelector('.n').onclick=()=>go(i+1);
+  let x0=null;tr.addEventListener('touchstart',e=>x0=e.touches[0].clientX,{passive:true});
+  tr.addEventListener('touchend',e=>{if(x0===null)return;const dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>40)go(i+(dx<0?1:-1));x0=null});
+  go(0);
+});
+
+// countdown to election day (polls close 6pm AEDT, 28 Nov 2026)
+(()=>{
+  const end=new Date('2026-11-28T18:00:00+11:00'),el=id=>document.getElementById(id),pad=v=>String(v).padStart(2,'0');
+  function tick(){let s=Math.max(0,(end-Date.now())/1000|0);
+    if(!s){document.getElementById('countdown').innerHTML='<div class="lbl">Thank you, Western Metro</div>';return}
+    el('cdD').textContent=s/86400|0;el('cdH').textContent=pad(s%86400/3600|0);el('cdM').textContent=pad(s%3600/60|0);el('cdS').textContent=pad(s%60)}
+  tick();setInterval(tick,1000);
+})();
+
+// scroll reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
